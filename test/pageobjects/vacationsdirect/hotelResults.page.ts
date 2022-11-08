@@ -4,17 +4,17 @@ export class HotelResultsPage extends BasePage {
 
     protected async getHotelResultsCountElement() { return await $('h2[class=hotel-results-pagination-count-header]'); }
     protected async getNextElement() {return await $('button=Next')}
-    protected async getHotelResults() { return await $$('li[class=js-hotel-result]')}
+    protected async getHotelResultsElement() { return await $$('li[class=js-hotel-result]')}
     async getDisplayedHotelResultsCount() {
         let hotelResultCountElement = await this.getHotelResultsCountElement();
         let innerText = await (await hotelResultCountElement.getText()).toString();
         console.log("hotel-results-count", "inner-text", innerText);
         let hotelCount = innerText.split(" ")[5];
-        console.log("hotel-count", hotelCount);
+        console.log("hotel-count", "actual", hotelCount);
         return hotelCount;
     }
     async getHotelResultsCountInSinglePage() {
-        let count = (await this.getHotelResults()).length;
+        let count = (await this.getHotelResultsElement()).length;
         return count;
     }
     async getHotelResultsCount() {
@@ -28,7 +28,7 @@ export class HotelResultsPage extends BasePage {
             await nextElement.click();
             console.log("next-element", nextElement);
         }
-        console.log("hotel-count", "in-all-pages", hotelCount);
+        console.log("hotel-count", "calculated", hotelCount);
         return hotelCount;
     }
 }
