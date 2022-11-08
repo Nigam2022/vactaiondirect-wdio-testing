@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1667657872999' stop='1667657882933'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1667657872999' status='passed' stop='1667657882898'>
+            <name>should navigate to hotel-tab</name>
+            <title>should navigate to hotel-tab</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.88'/>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.88'/>
+            </parameters>
+            <steps>
+                <step start='1667657873000' status='passed' stop='1667657882794'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='9befe176-43cc-42bb-8c17-4f0b73f00dd0-attachment.json' type='application/json' size='43'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1667657882796' status='passed' stop='1667657882816'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='a3ad8e50-9caf-4f2d-9fff-d329ac86b06d-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='da7aa158-248a-464e-9839-611d0efe6f0f-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1667657882820' status='passed' stop='1667657882833'>
+                    <name>GET /session/:sessionId/element/c409e510-e468-4e0e-a660-af707cabe7b5/enabled</name>
+                    <title>GET /session/:sessionId/element/c409e510-e468-4e0e-a660-af707cabe7b5/enabled</title>
+                    <attachments>
+                        <attachment title='Response' source='9f5e21ea-fc3c-41a6-938f-57e5ec973c14-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1667657882834' status='passed' stop='1667657882895'>
+                    <name>POST /session/:sessionId/element/c409e510-e468-4e0e-a660-af707cabe7b5/click</name>
+                    <title>POST /session/:sessionId/element/c409e510-e468-4e0e-a660-af707cabe7b5/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1667657882900' status='passed' stop='1667657882932'>
+            <name>hotel-table should be selected</name>
+            <title>hotel-table should be selected</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.88'/>
+            </parameters>
+            <steps>
+                <step start='1667657882903' status='passed' stop='1667657882923'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='e489c0ca-ea93-479e-9665-46a9b578747d-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='eade960d-64e3-4633-bc19-ad5cf58cbc6d-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1667657882928' status='undefined'>
+                    <name>GET /session/:sessionId/element/c409e510-e468-4e0e-a660-af707cabe7b5/attribute/aria-selected</name>
+                    <title>GET /session/:sessionId/element/c409e510-e468-4e0e-a660-af707cabe7b5/attribute/aria-selected</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,82 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1667553996945' stop='1667554003881'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1667553996945' status='broken' stop='1667554003874'>
+            <name>navigate to hotel-tab</name>
+            <title>navigate to hotel-tab</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.88'/>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.88'/>
+            </parameters>
+            <steps>
+                <step start='1667553996947' status='broken' stop='1667554003874'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='2a156a8a-5176-4ade-ada3-b6680d64792b-attachment.json' type='application/json' size='43'/>
+                    </attachments>
+                    <steps>
+                        <step start='1667553996959' status='broken' stop='1667554003874'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='6d94c3bd-4bc7-4fb0-9a95-c8bd7cd2c28e-attachment.json' type='application/json' size='62'/>
+                            </attachments>
+                            <steps>
+                                <step start='1667553996972' status='passed' stop='1667554003689'>
+                                    <name>GET /session/:sessionId/screenshot</name>
+                                    <title>GET /session/:sessionId/screenshot</title>
+                                    <attachments>
+                                        <attachment title='Response' source='5ea27f22-6f47-4c8b-9885-338927939f38-attachment.json' type='application/json' size='83'/>
+                                    </attachments>
+                                    <steps>
+                                        <step start='1667553996976' status='passed' stop='1667554003677'>
+                                            <name>POST /session/:sessionId/element</name>
+                                            <title>POST /session/:sessionId/element</title>
+                                            <attachments>
+                                                <attachment title='Request' source='9204a4ac-dc75-4633-a5d6-f644bf24f205-attachment.json' type='application/json' size='62'/>
+                                            </attachments>
+                                            <steps/>
+                                        </step>
+                                    </steps>
+                                </step>
+                                <step start='1667554003693' status='passed' stop='1667554003873'>
+                                    <name>POST /session/:sessionId/element/d5e4ff22-9290-44d8-9dd7-52f35afd0f61/click</name>
+                                    <title>POST /session/:sessionId/element/d5e4ff22-9290-44d8-9dd7-52f35afd0f61/click</title>
+                                    <attachments>
+                                        <attachment title='Screenshot' source='8feb2ed0-19bc-4522-9c06-3f388b6afa1a-attachment.png' type='image/png' size='295094'/>
+                                    </attachments>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1667554003879' status='undefined'>
+                    <name>GET /session/:sessionId/element/d5e4ff22-9290-44d8-9dd7-52f35afd0f61/enabled</name>
+                    <title>GET /session/:sessionId/element/d5e4ff22-9290-44d8-9dd7-52f35afd0f61/enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='822f3ba5-ed20-497f-bdde-fca8c484e559-attachment.json' type='application/json' size='83'/>
+            </attachments>
+            <failure>
+                <message>location is not defined</message>
+                <stack-trace>ReferenceError: location is not defined
+                    at Context.&lt;anonymous> (C:\Users\NPithadiya\OneDrive - Affinion Group\Desktop\Training\Testing-v1\test\specs\example.e2e.ts:14:36)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
